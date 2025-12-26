@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Overview - Sakura Elite Experiences</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 语言切换器 -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active">English</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn">中文</button>
+        <button onclick="switchLanguage('ja')" class="lang-btn">日本語</button>
+    </div>
+
+    <!-- 头部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo-sakura-elite.png" alt="Sakura Elite Experiences Logo">
+                <span class="logo-text" data-en="Sakura Elite" data-zh="樱花精英" data-ja="桜エリート">Sakura Elite</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html" data-en="Home" data-zh="首页" data-ja="ホーム">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active" data-en="About Us" data-zh="关于我们" data-ja="会社概要">About Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="company-overview.html" class="active" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                            <li><a href="leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Products & Services" data-zh="产品服务" data-ja="製品・サービス">Products & Services ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                            <li><a href="entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                            <li><a href="sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Why Choose Us" data-zh="为什么选择我们" data-ja="選ばれる理由">Why Choose Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="value-proposition.html" data-en="Value Proposition" data-zh="价值主张" data-ja="価値提案">Value Proposition</a></li>
+                            <li><a href="sustainability.html" data-en="Sustainability" data-zh="可持续发展" data-ja="持続可能性">Sustainability</a></li>
+                            <li><a href="partnerships.html" data-en="Partnerships" data-zh="合作伙伴" data-ja="パートナーシップ">Partnerships</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Contact" data-zh="联系我们" data-ja="お問い合わせ">Contact ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact-info.html" data-en="Contact Info" data-zh="联系信息" data-ja="連絡先">Contact Info</a></li>
+                            <li><a href="inquiry.html" data-en="Inquiry Form" data-zh="咨询表单" data-ja="お問い合わせフォーム">Inquiry Form</a></li>
+                            <li><a href="social-media.html" data-en="Social Media" data-zh="社交媒体" data-ja="SNS">Social Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">☰</div>
+        </div>
+    </header>
+
+    <!-- 页面横幅 -->
+    <section class="page-banner" style="background-image: url('../assets/images/banner-company.jpg')">
+        <div class="banner-content">
+            <h1 data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</h1>
+            <p data-en="Discover our story and mission" data-zh="了解我们的故事和使命" data-ja="私たちの物語と使命を発見する">Discover our story and mission</p>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <section class="company-story">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2 data-en="Our Story" data-zh="我们的故事" data-ja="私たちの物語">Our Story</h2>
+                        <p data-en="Founded in 2018, Sakura Elite Experiences was born from a passion for sharing the authentic beauty of Japan with the world. Our founders, having spent decades immersed in Japanese culture, recognized the need for premium, culturally-sensitive tourism that goes beyond typical sightseeing." 
+                           data-zh="樱花精英体验成立于2018年，源于与世界分享日本真实美的热情。我们的创始人在日本文化中沉浸数十年，认识到需要超越典型观光的优质、文化敏感的旅游服务。" 
+                           data-ja="2018年に設立された桜エリート体験は、世界と日本の真の美しさを共有するという情熱から生まれました。私たちの創業者は日本文化に何十年も浸り、典型的な観光を超越するプレミアムで文化的に配慮された観光の必要性を認識しました。">
+                           Founded in 2018, Sakura Elite Experiences was born from a passion for sharing the authentic beauty of Japan with the world. Our founders, having spent decades immersed in Japanese culture, recognized the need for premium, culturally-sensitive tourism that goes beyond typical sightseeing.
+                        </p>
+                        <p data-en="We specialize in creating bespoke journeys that blend traditional Japanese culture with modern entertainment and sports experiences. From private tea ceremonies with master artisans to VIP access at sumo tournaments and exclusive anime studio tours, we craft unforgettable memories." 
+                           data-zh="我们专注于创建将日本传统文化与现代娱乐和体育体验相结合的定制旅程。从与大师级工匠的私人茶道到相扑比赛的VIP通道和独家动漫工作室参观，我们打造难忘回忆。" 
+                           data-ja="私たちは、日本の伝統文化と現代のエンターテイメント、スポーツ体験を融合させたオーダーメイドの旅を作成することに特化しています。巨匠とのプライベート茶道から相撲トーナメントのVIPアクセス、独占アニメスタジオツアーまで、忘れられない思い出を作ります。">
+                           We specialize in creating bespoke journeys that blend traditional Japanese culture with modern entertainment and sports experiences. From private tea ceremonies with master artisans to VIP access at sumo tournaments and exclusive anime studio tours, we craft unforgettable memories.
+                        </p>
+                    </div>
+                    <div class="story-image">
+                        <img src="../assets/images/company-story.jpg" alt="Our Company Story" class="rounded-image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="mission-vision">
+                <div class="mission-vision-grid">
+                    <div class="mission-card">
+                        <div class="card-icon">🎯</div>
+                        <h3 data-en="Our Mission" data-zh="我们的使命" data-ja="私たちの使命">Our Mission</h3>
+                        <p data-en="To provide unparalleled access to Japan's cultural treasures, sports traditions, and entertainment phenomena while promoting sustainable tourism and fostering cross-cultural understanding." 
+                           data-zh="提供对日本文化宝藏、体育传统和娱乐现象的无与伦比的访问，同时促进可持续旅游和跨文化理解。" 
+                           data-ja="持続可能な観光を促進し、異文化間の理解を育む一方で、日本の文化財、スポーツ伝統、エンターテイメント現象への比類なきアクセスを提供すること。">
+                           To provide unparalleled access to Japan's cultural treasures, sports traditions, and entertainment phenomena while promoting sustainable tourism and fostering cross-cultural understanding.
+                        </p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="card-icon">🌟</div>
+                        <h3 data-en="Our Vision" data-zh="我们的愿景" data-ja="私たちのビジョン">Our Vision</h3>
+                        <p data-en="To be the world's most trusted curator of premium Japanese experiences, bridging cultures through authentic, sustainable, and innovative tourism." 
+                           data-zh="成为世界上最值得信赖的高端日本体验策展人，通过真实、可持续和创新的旅游架接文化。" 
+                           data-ja="本物で持続可能、そして革新的な観光を通じて文化を橋渡しする、プレミアム日本体験の世界で最も信頼されるキュレーターとなること。">
+                           To be the world's most trusted curator of premium Japanese experiences, bridging cultures through authentic, sustainable, and innovative tourism.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="key-stats">
+                <h2 data-en="Our Impact" data-zh="我们的影响" data-ja="私たちのインパクト">Our Impact</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label" data-en="Happy Travelers" data-zh="满意游客" data-ja="満足した旅行者">Happy Travelers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label" data-en="Local Partners" data-zh="本地合作伙伴" data-ja="地元パートナー">Local Partners</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label" data-en="Satisfaction Rate" data-zh="满意度" data-ja="満足度">Satisfaction Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label" data-en="Prefectures Covered" data-zh="覆盖都道府县" data-ja="カバーする都道府県">Prefectures Covered</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-zh="快速链接" data-ja="クイックリンク">Quick Links</h4>
+                    <ul>
+                        <li><a href="japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                        <li><a href="entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                        <li><a href="sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        <li><a href="value-proposition.html" data-en="Why Choose Us" data-zh="为什么选择我们" data-ja="選ばれる理由">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Company" data-zh="公司" data-ja="会社情報">Company</h4>
+                    <ul>
+                        <li><a href="company-overview.html" data-en="About Us" data-zh="关于我们" data-ja="会社概要">About Us</a></li>
+                        <li><a href="sustainability.html" data-en="Sustainability" data-zh="可持续发展" data-ja="持続可能性">Sustainability</a></li>
+                        <li><a href="partnerships.html" data-en="Partnerships" data-zh="合作伙伴" data-ja="パートナーシップ">Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-zh="联系方式" data-ja="お問い合わせ">Contact</h4>
+                    <p data-en="Email: info@sakuraelite.com" data-zh="邮箱：info@sakuraelite.com" data-ja="メール：info@sakuraelite.com">Email: info@sakuraelite.com</p>
+                    <p data-en="Phone: +81-3-1234-5678" data-zh="电话：+81-3-1234-5678" data-ja="電話：+81-3-1234-5678">Phone: +81-3-1234-5678</p>
+                    <p data-en="Tokyo, Japan" data-zh="日本东京" data-ja="日本・東京">Tokyo, Japan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sakura Elite Experiences. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

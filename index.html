@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Elite Experiences - Premium Japan Tours</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('en')" class="lang-btn active">English</button>
+        <button onclick="switchLanguage('zh')" class="lang-btn">中文</button>
+        <button onclick="switchLanguage('ja')" class="lang-btn">日本語</button>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo-sakura-elite.png" alt="Sakura Elite Experiences Logo">
+                <span class="logo-text" data-en="Sakura Elite" data-zh="樱花精英" data-ja="桜エリート">Sakura Elite</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active" data-en="Home" data-zh="首页" data-ja="ホーム">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-en="About Us" data-zh="关于我们" data-ja="会社概要">About Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/company-overview.html" data-en="Company Overview" data-zh="公司概述" data-ja="会社概要">Company Overview</a></li>
+                            <li><a href="pages/leadership.html" data-en="Leadership" data-zh="领导层" data-ja="経営陣">Leadership</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Products & Services" data-zh="产品服务" data-ja="製品・サービス">Products & Services ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                            <li><a href="pages/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                            <li><a href="pages/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Why Choose Us" data-zh="为什么选择我们" data-ja="選ばれる理由">Why Choose Us ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/value-proposition.html" data-en="Value Proposition" data-zh="价值主张" data-ja="価値提案">Value Proposition</a></li>
+                            <li><a href="pages/sustainability.html" data-en="Sustainability" data-zh="可持续发展" data-ja="持続可能性">Sustainability</a></li>
+                            <li><a href="pages/partnerships.html" data-en="Partnerships" data-zh="合作伙伴" data-ja="パートナーシップ">Partnerships</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-en="Contact" data-zh="联系我们" data-ja="お問い合わせ">Contact ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/contact-info.html" data-en="Contact Info" data-zh="联系信息" data-ja="連絡先">Contact Info</a></li>
+                            <li><a href="pages/inquiry.html" data-en="Inquiry Form" data-zh="咨询表单" data-ja="お問い合わせフォーム">Inquiry Form</a></li>
+                            <li><a href="pages/social-media.html" data-en="Social Media" data-zh="社交媒体" data-ja="SNS">Social Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">☰</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('assets/images/hero-mt-fuji.jpg')">
+                <div class="hero-content">
+                    <h1 data-en="Premium Japan Experiences" data-zh="高端日本体验" data-ja="プレミアム日本体験">Premium Japan Experiences</h1>
+                    <p data-en="Exclusive tours blending culture, entertainment, and sports" data-zh="融合文化、娱乐和体育的独家之旅" data-ja="文化、エンターテイメント、スポーツを融合した独占ツアー">Exclusive tours blending culture, entertainment, and sports</p>
+                    <a href="pages/japan-tours.html" class="cta-button" data-en="Explore Tours" data-zh="探索行程" data-ja="ツアーを探索">Explore Tours</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('assets/images/hero-tokyo-night.jpg')">
+                <div class="hero-content">
+                    <h1 data-en="Entertainment & Sports" data-zh="娱乐与体育" data-ja="エンターテイメント＆スポーツ">Entertainment & Sports</h1>
+                    <p data-en="From sumo to anime, experience Japan's vibrant culture" data-zh="从相扑到动漫，体验日本的活力文化" data-ja="相撲からアニメまで、日本の活気ある文化を体験">From sumo to anime, experience Japan's vibrant culture</p>
+                    <a href="pages/entertainment.html" class="cta-button" data-en="Discover More" data-zh="了解更多" data-ja="もっと見る">Discover More</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Why Travel With Us" data-zh="为什么选择我们" data-ja="なぜ私たちと旅行するのか">Why Travel With Us</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌸</div>
+                    <h3 data-en="Authentic Experiences" data-zh="真实体验" data-ja="本物の体験">Authentic Experiences</h3>
+                    <p data-en="Insider access to traditional festivals, tea ceremonies, and hidden gems" data-zh="深入探访传统节日、茶道和隐秘景点" data-ja="伝統祭り、茶道、隠れた名所への内部アクセス">Insider access to traditional festivals, tea ceremonies, and hidden gems</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 data-en="Premium Sports Events" data-zh="高端体育活动" data-ja="プレミアムスポーツイベント">Premium Sports Events</h3>
+                    <p data-en="VIP tickets to sumo tournaments, baseball games, and martial arts shows" data-zh="相扑比赛、棒球赛和武术表演的VIP门票" data-ja="相撲トーナメント、野球試合、武道ショーのVIPチケット">VIP tickets to sumo tournaments, baseball games, and martial arts shows</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3 data-en="Entertainment Access" data-zh="娱乐专属通道" data-ja="エンターテイメントアクセス">Entertainment Access</h3>
+                    <p data-en="Exclusive anime studio tours, J-pop concerts, and pop culture experiences" data-zh="独家动漫工作室参观、J-pop演唱会和流行文化体验" data-ja="独占アニメスタジオツアー、J-POPコンサート、ポップカルチャー体験">Exclusive anime studio tours, J-pop concerts, and pop culture experiences</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3 data-en="Sustainable Tourism" data-zh="可持续旅游" data-ja="持続可能な観光">Sustainable Tourism</h3>
+                    <p data-en="Eco-friendly travel supporting local communities and preservation" data-zh="支持当地社区和保护的环保旅行" data-ja="地域コミュニティと保護を支援する環境に優しい旅行">Eco-friendly travel supporting local communities and preservation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Market Section -->
+    <section class="target-market">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Our Valued Customers" data-zh="我们的尊贵客户" data-ja="大切なお客様">Our Valued Customers</h2>
+            </div>
+            <div class="market-grid">
+                <div class="market-card">
+                    <img src="assets/images/audience-culture.jpg" alt="Culture Enthusiasts">
+                    <h3 data-en="Culture Enthusiasts" data-zh="文化爱好者" data-ja="文化愛好家">Culture Enthusiasts</h3>
+                    <p data-en="Ages 35-65, seeking authentic cultural immersion and historical insights" data-zh="35-65岁，寻求真实文化沉浸和历史洞察" data-ja="35〜65歳、本物の文化体験と歴史的洞察を求める">Ages 35-65, seeking authentic cultural immersion and historical insights</p>
+                </div>
+                <div class="market-card">
+                    <img src="assets/images/audience-sports.jpg" alt="Sports Fans">
+                    <h3 data-en="Sports Aficionados" data-zh="体育迷" data-ja="スポーツファン">Sports Aficionados</h3>
+                    <p data-en="Ages 25-55, passionate about Japanese martial arts and professional sports" data-zh="25-55岁，热爱日本武术和职业体育" data-ja="25〜55歳、日本の武道とプロスポーツに情熱を持つ">Ages 25-55, passionate about Japanese martial arts and professional sports</p>
+                </div>
+                <div class="market-card">
+                    <img src="assets/images/audience-anime.jpg" alt="Pop Culture Fans">
+                    <h3 data-en="Pop Culture Fans" data-zh="流行文化粉丝" data-ja="ポップカルチャーファン">Pop Culture Fans</h3>
+                    <p data-en="Ages 18-40, obsessed with anime, manga, gaming, and J-pop" data-zh="18-40岁，痴迷于动漫、漫画、游戏和J-pop" data-ja="18〜40歳、アニメ、マンガ、ゲーム、J-POPに夢中">Ages 18-40, obsessed with anime, manga, gaming, and J-pop</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-preview">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="Experience Gallery" data-zh="体验画廊" data-ja="体験ギャラリー">Experience Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-1-fuji.jpg" alt="Mount Fuji Tour">
+                    <div class="gallery-overlay">
+                        <span data-en="Mount Fuji Private Tour" data-zh="富士山私人之旅" data-ja="富士山プライベートツアー">Mount Fuji Private Tour</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-2-sumo.jpg" alt="Sumo Experience">
+                    <div class="gallery-overlay">
+                        <span data-en="Sumo Wrestling Experience" data-zh="相扑体验" data-ja="相撲体験">Sumo Wrestling Experience</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-3-tea.jpg" alt="Tea Ceremony">
+                    <div class="gallery-overlay">
+                        <span data-en="Traditional Tea Ceremony" data-zh="传统茶道" data-ja="伝統茶道">Traditional Tea Ceremony</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-4-anime.jpg" alt="Anime Studio">
+                    <div class="gallery-overlay">
+                        <span data-en="Anime Studio Tour" data-zh="动漫工作室参观" data-ja="アニメスタジオツアー">Anime Studio Tour</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="pages/gallery.html" class="cta-button secondary" data-en="View Full Gallery" data-zh="查看完整画廊" data-ja="全ギャラリーを見る">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-en="Ready for Your Japan Adventure?" data-zh="准备好您的日本之旅了吗？" data-ja="日本の冒険の準備はできましたか？">Ready for Your Japan Adventure?</h2>
+            <p data-en="Contact us today for personalized itinerary planning" data-zh="立即联系我们获取个性化行程规划" data-ja="パーソナライズされた旅程計画のためお問い合わせください">Contact us today for personalized itinerary planning</p>
+            <div class="cta-buttons">
+                <a href="pages/inquiry.html" class="cta-button" data-en="Get Custom Quote" data-zh="获取定制报价" data-ja="カスタム見積もりを取得">Get Custom Quote</a>
+                <a href="pages/contact-info.html" class="cta-button secondary" data-en="Contact Us" data-zh="联系我们" data-ja="お問い合わせ">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-zh="快速链接" data-ja="クイックリンク">Quick Links</h4>
+                    <ul>
+                        <li><a href="pages/japan-tours.html" data-en="Japan Tours" data-zh="日本旅游" data-ja="日本ツアー">Japan Tours</a></li>
+                        <li><a href="pages/entertainment.html" data-en="Entertainment" data-zh="娱乐项目" data-ja="エンターテイメント">Entertainment</a></li>
+                        <li><a href="pages/sports.html" data-en="Sports" data-zh="体育活动" data-ja="スポーツ">Sports</a></li>
+                        <li><a href="pages/value-proposition.html" data-en="Why Choose Us" data-zh="为什么选择我们" data-ja="選ばれる理由">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Company" data-zh="公司" data-ja="会社情報">Company</h4>
+                    <ul>
+                        <li><a href="pages/company-overview.html" data-en="About Us" data-zh="关于我们" data-ja="会社概要">About Us</a></li>
+                        <li><a href="pages/sustainability.html" data-en="Sustainability" data-zh="可持续发展" data-ja="持続可能性">Sustainability</a></li>
+                        <li><a href="pages/partnerships.html" data-en="Partnerships" data-zh="合作伙伴" data-ja="パートナーシップ">Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-zh="联系方式" data-ja="お問い合わせ">Contact</h4>
+                    <p data-en="Email: info@sakuraelite.com" data-zh="邮箱：info@sakuraelite.com" data-ja="メール：info@sakuraelite.com">Email: info@sakuraelite.com</p>
+                    <p data-en="Phone: +81-3-1234-5678" data-zh="电话：+81-3-1234-5678" data-ja="電話：+81-3-1234-5678">Phone: +81-3-1234-5678</p>
+                    <p data-en="Tokyo, Japan" data-zh="日本东京" data-ja="日本・東京">Tokyo, Japan</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-zh="关注我们" data-ja="フォローする">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sakura Elite Experiences. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
